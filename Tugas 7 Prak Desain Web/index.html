@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>    
+<body class="min-h-screen bg-gray-100 p-6">
+    <div class="w-fullp-4 shadow-md">
+        <h1 class="text-4xl font-bold text-white text-center uppercase tracking-wide">Aplikasi Buku Favorit</h1>
+    </div>
+    <div class="overlay w-full bg-white/60 p-6 rounded-lg shadow-lg mt-6">
+        
+        <!-- Input Nama Pengguna -->
+        <div id="session-container" class="mb-6 p-4 bg-blue-100 rounded-lg flex flex-col sm:flex-row items-center w-full">
+            <input type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" class="w-full sm:flex-grow sm:w-auto px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-2 sm:mb-0 sm:mr-2" />
+            <button id="btnSimpanNama" class="w-full sm:w-auto bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-all">Simpan Nama</button>
+        </div>                    
+        <p id="salamPengguna" class="text-center text-lg font-semibold text-blue-600 mb-6"></p>
+
+        <!-- Form Tambah Buku -->
+        <form id="form-tambah-buku" class="space-y-4 bg-white/80 p-6 rounded-lg shadow-lg w-full">
+            <input type="text" id="judul" placeholder="Judul Buku" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <input type="text" id="penulis" placeholder="Penulis" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <input type="number" id="tahun" placeholder="Tahun Terbit" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-all">Tambah Buku</button>
+        </form>
+
+        <!-- Daftar Buku -->
+        <h2 class="text-2xl font-semibold text-indigo-600 text-center mt-8 mb-4 capitalize tracking-wide underline underline-offset-2 decoration-indigo-600">Daftar Buku</h2>
+        <div id="daftar-buku" class="bg-white/80 p-6 rounded-lg shadow-lg space-y-4 w-full">
+            <!-- Contoh buku akan muncul di sini -->
+            <div class="buku flex justify-between items-start border-b pb-4 border-gray-200">
+                <div>
+                    <p class="text-lg font-semibold text-gray-800 mb-1">Judul Buku</p>
+                    <p class="text-sm text-gray-500">Penulis (Tahun)</p>
+                    <button class="w-full bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-all">Tambahkan Favorit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buku Favorit -->
+        <h2 class="text-2xl font-semibold text-indigo-600 text-center mt-8 mb-4 capitalize tracking-wide underline underline-offset-2 decoration-indigo-600">Buku Favorit</h2>
+        <div id="buku-favorit" class="bg-white/80 p-6 rounded-lg shadow-lg space-y-4 w-full">
+            <!-- Contoh buku favorit akan muncul di sini -->
+            <div class="buku flex justify-between items-center border-b pb-4 border-gray-200">
+                <p class="text-lg font-medium text-gray-800">Judul Buku Favorit - Penulis (Tahun)</p>
+                <button class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all">Hapus</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
