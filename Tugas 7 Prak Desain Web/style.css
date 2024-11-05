@@ -1,34 +1,29 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@500;700&display=swap');
 
-/* Mengatur font default untuk seluruh halaman */
 body {
-    font-family: 'Lato', sans-serif; /* Menggunakan Lato untuk konten utama */
+    font-family: 'Lato', sans-serif; 
     font-weight: 300;
-    line-height: 1.6; /* Memberikan spasi yang nyaman antar teks */
-    background-image: url('img/pngtree-bookcase-colorful-publication-bookshelves-texts-picture-image_1746548.jpg'); /* Ganti dengan path gambar atau URL gambar */
-    background-size: cover; /* Agar gambar memenuhi seluruh layar */
-    background-repeat: no-repeat; /* Agar gambar tidak diulang */
-    background-position: center; /* Posisi gambar di tengah halaman */
-    min-height: 100vh; /* Memastikan body setidaknya setinggi layar */
+    line-height: 1.6; 
+    background-image: url('img/pngtree-bookcase-colorful-publication-bookshelves-texts-picture-image_1746548.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    min-height: 100vh; 
 }
 
-/* Mengatur font untuk judul (h1, h2) */
 h1, h2 {
-    font-family: 'Playfair Display', serif; /* Playfair Display untuk heading */
-    font-weight: 700; /* Berat lebih untuk h1 */
-    letter-spacing: 0.05em; /* Memberikan spasi tambahan antar huruf */
+    font-family: 'Playfair Display', serif; 
+    font-weight: 700; 
+    letter-spacing: 0.05em; 
 }
 
-/* Mengatur font pada tombol dan input agar konsisten */
 input, button {
-    font-family: 'Lato', sans-serif; /* Lato agar tetap konsisten dengan body */
+    font-family: 'Lato', sans-serif; 
     font-weight: 400;
 }
 
-/* Untuk efek lebih halus pada tombol */
 button {
-    font-family: 'Playfair Display', serif; /* Elegan dengan Playfair Display pada tombol */
+    font-family: 'Playfair Display', serif; 
     font-weight: 500;
     letter-spacing: 0.03em;
 }
